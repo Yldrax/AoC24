@@ -1,25 +1,11 @@
-import numpy as np
-
 """
-    December 1
+    December 01, 2024
+
 """
 
 """
     Part 01
 """
-
-file01 = open('input_01_01.txt', 'r')
-input01 = file01.read()
-file01.close()
-
-input01 = input01.replace("\n","   ").strip().split("   ")
-
-input01_01 = []
-input01_02 = []
-
-for k in range(0,len(input01), 2):
-    input01_01.append(int(input01[k]))
-    input01_02.append(int(input01[k+1]))
 
 def list_compare(list1: list[int], list2: list[int]) -> int:
     sorted1 = list1
@@ -54,11 +40,28 @@ def list_similarity(list1: list[int], list2: list[int]) -> int:
     return similarity
 
 """
-    Use the Functions
+    Using the Functions
 """
 
 if __name__ == '__main__':
-    print(f"The Distance is {list_compare(input01_01, input01_02)}!")
-    print(f"The Similarity is {list_similarity(input01_01, input01_02)}!")
+
+    # Getting the String and splitting it into a list
+    file = open('inputs/01.txt', 'r')
+    input_str = file.read()
+    file.close()
+
+    input_list = input_str.replace("\n", "   ").strip().split("   ")
+
+    input1 = []
+    input2 = []
+
+    # Splitting the list
+    for k in range(0, len(input_list), 2):
+        input1.append(int(input_list[k]))
+        input2.append(int(input_list[k + 1]))
+
+    # Actually applying the functions
+    print(f"The Distance is {list_compare(input1, input2)}!")
+    print(f"The Similarity is {list_similarity(input1, input2)}!")
 
 
