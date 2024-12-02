@@ -6,6 +6,7 @@
 """
     Part 01
 """
+
 def check_safety(list1) -> bool:
     ascending = False
     descending = False
@@ -37,9 +38,11 @@ def check_report_safeties(list1):
 
     return safe_num
 
+
 """
     Part 02
 """
+
 def check_dampened_safety(list1) -> bool:
     safe = False
     for i in range (len(list1)):

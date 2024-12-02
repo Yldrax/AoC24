@@ -19,6 +19,7 @@ def list_compare(list1: list[int], list2: list[int]) -> int:
 
     return distance
 
+
 """
     Part 02
 """
@@ -38,6 +39,7 @@ def list_similarity(list1: list[int], list2: list[int]) -> int:
             similarity += number * num_dict[number]
 
     return similarity
+
 
 """
     Using the Functions
