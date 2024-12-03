@@ -10,8 +10,6 @@ from re import findall
 """
 
 def multiplication_sum(string1: str) -> int:
-    mult_sum = 0
-
     # Finding the "mul(xxx,yyy) patterns
     matches = findall(r"mul\(\d{1,3},\d{1,3}\)", string1)
     # Extracting the numbers
@@ -28,11 +26,9 @@ def multiplication_sum(string1: str) -> int:
 """
 
 def multiplication_sum_conditional(string1):
-    mult_sum = 0
-
     # Finding the "mul(xxx,yyy)", "do" or "don't" patterns
     matches = findall(r"mul\(\d{1,3},\d{1,3}\)|don't|do", string1)
-    # extracting only the relevant numbers"
+    # extracting only the relevant numbers
     matches_do = []
     dont = False
     for match in matches:
