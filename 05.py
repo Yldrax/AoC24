@@ -7,14 +7,14 @@
     Part 01
 """
 
-def placeholder1()
+def placeholder1():
     pass
 
 """
     Part 02
 """
 
-def placeholder2()
+def placeholder2():
     pass
 
 """
