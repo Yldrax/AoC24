@@ -2,7 +2,9 @@
     December 04, 2024
 
 """
+
 import numpy as np
+
 """
     Part 01
 """
