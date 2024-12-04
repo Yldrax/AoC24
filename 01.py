@@ -8,11 +8,9 @@
 """
 
 def list_compare(list1: list[int], list2: list[int]) -> int:
-    sorted1 = list1
-    sorted2 = list2
+    sorted1 = sorted(list1.copy())
+    sorted2 = sorted(list2.copy())
     distance = 0
-    list1.sort()
-    list2.sort()
 
     for i in range(len(list1)):
         distance += abs(sorted1[i] - sorted2[i])
